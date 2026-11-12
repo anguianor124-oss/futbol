@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Venta de boletos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="contenedor">
+
+        <h2>Venta de boletos</h2>
+
+        RFC:
+        <input type="text" id="rfc">
+        <br><br>
+
+        Cliente:
+        <input type="text" id="nombre">
+        <br><br>
+
+        Niños:
+        <input type="number" id="ninos">
+        <br><br>
+
+        Adultos:
+        <input type="number" id="adultos">
+        <br><br>
+
+        Zona:
+        <select id="zona">
+            <option value="sol">Zona Sol</option>
+            <option value="sombra">Zona Sombra</option>
+        </select>
+        <br><br>
+
+        <button onclick="pedido.calcular()">Calcular</button>
+        <button onclick="guardar()">Guardar</button>
+        <button onclick="recuperar()">Recuperar</button>
+        <button onclick="generarTicket()">Generar ticket</button>
+
+        <h3>Resultados</h3>
+
+        Subtotal: $<span id="subtotal">0</span>
+        <br><br>
+
+        IVA: $<span id="iva">0</span>
+        <br><br>
+
+        Total: $<span id="total">0</span>
+        <br><br>
+
+        Personas que entraron:
+        <span id="personas">0</span>
+
+    </div>
+
+    <script src="funciones.js"></script>
+</body>
+</html>
